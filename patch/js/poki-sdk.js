@@ -141,20 +141,20 @@ PokiSDK= function() {
     consoleLog("--fx--PokiSDK--gameplayStop--");
   }
 
-  // ***** ADS CONTROL *****
-  this.commercialBreak= function(){
-    consoleLog("--fx--PokiSDK--commercialBreak--");
-    return new Promise((resolve, reject)=> {
-      loadJS("https://www.ubg235.com/ads/commercial.js", resolve);  
-    });
-  }
+// ***** ADS CONTROL *****
+this.commercialBreak = function(){
+  consoleLog("--fx--PokiSDK--commercialBreak--");
+  return new Promise((resolve, reject)=> {
+    loadJS("../../../ad/commercial.js", resolve);  
+  });
+}
 
-  this.rewardedBreak= function() {
-   consoleLog("--fx--PokiSDK--rewardedBreak--");
-    return new Promise((resolve, reject)=> {
-      loadJS("https://www.ubg235.com/ads/rewarded.js", resolve);
-    }); 
-  }
+this.rewardedBreak = function() {
+  consoleLog("--fx--PokiSDK--rewardedBreak--");
+  return new Promise((resolve, reject)=> {
+    loadJS("../../../ad/rewarded.js", resolve);
+  }); 
+}
 
   this.displayAd= function() {
     consoleLog("--fx--PokiSDK--displayAd--", arguments);
